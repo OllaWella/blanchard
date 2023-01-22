@@ -5,46 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Blanchard.svg">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.0/dist/accordion.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Blacnchard</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container header__container flex">
+            <button class="btn-reset header__btn-open">
+                <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
+                    <path d="M28.2002 12.8739H0.000194192V16.5261H28.2002V12.8739Z" fill="white" />
+                    <path d="M24 25.0479H-9.53674e-07V28.7H24V25.0479Z" fill="white" />
+                </svg>
+            </button>
             <a href="#" class="header__logo">
                 <img src="img/logo.svg" alt="Logo Blacnchard">
             </a>
+            <div class="flex header__input-tablet">
+                <button class="btn-reset header__input-tablet__btn">
+                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+                        </svg>
+                </button>
+                <input type="search" class="hero__menu__search-input">
+                <button class="btn-reset header__input__btn-close">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white"/>
+                        <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)" fill="white"/>
+                        </svg>
+                </button>
+            </div>
             <nav class="header__nav">
+                <button class="btn-reset nav__close">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.63672" width="37.2838" height="3.72838" transform="rotate(45 2.63672 0)"
+                            fill="white" />
+                        <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)"
+                            fill="white" />
+                    </svg>
+                </button>
                 <ul class="header__nav__list flex">
                     <li class="header__nav__item">
-                        <a href="#" class="header__nav__item--link">О нас</a>
+                        <a href="#about" class="header__nav__item--link">О нас</a>
                     </li>
                     <li class="header__nav__item">
-                        <a href="#" class="header__nav__item--link">Галерея</a>
+                        <a href="#gallery" class="header__nav__item--link">Галерея</a>
                     </li>
                     <li class="header__nav__item">
-                        <a href="#" class="header__nav__item--link">Каталог</a>
+                        <a href="#catalog" class="header__nav__item--link">Каталог</a>
                     </li>
                     <li class="header__nav__item">
-                        <a href="#" class="header__nav__item--link">События</a>
+                        <a href="#events" class="header__nav__item--link">События</a>
                     </li>
                     <li class="header__nav__item">
-                        <a href="#" class="header__nav__item--link">Проекты</a>
+                        <a href="#projects" class="header__nav__item--link">Проекты</a>
                     </li>
                     <li class="header__nav__item">
-                        <a href="#" class="header__nav__item--link">Контакты</a>
+                        <a href="#contacts" class="header__nav__item--link">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <button class="btn-reset header__btn-login">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+                    <path
+                        d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                        fill="white" />
                 </svg>
                 Войти</button>
         </div>
@@ -55,60 +89,95 @@
             <div class="hero-container">
                 <div class="hero__menu flex">
                     <ul class="hero__list flex">
-                        <li class="hero__item" tabindex="1">
-                            <select  id="hero-choices1" class="hero__choices">
-                                <option selected disabled value="">Реализм</option>
-                                <option>Тинторетто</option>
-                                <option>Фридрих</option>
-                                <option>Леонардо</option>
-                                <option>Верроккьо</option>
-                            </select>
+                        <li class="hero__item">
+                            <button class="list__btn btn-reset">Реализм
+                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6L1 1" stroke="white" />
+                                </svg>
+                            </button>
+                            <div class="list__dropdown dropdown">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Реализм</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Тинторетто</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Леонардо</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Верроккьо</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="hero__item" tabindex="1">
-                            <select id="hero-choices2" class="hero__choices">
-                                <option selected disabled value="">Импрессионизм</option>
-                                <option>Моне</option>
-                                <option>Сислей</option>
-                                <option>Мане</option>
-                                <option>Ренуар</option>
-                            </select>
+                        <li class="hero__item">
+                            <button class="list__btn btn-reset">Импрессионизм
+                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6L1 1" stroke="white" />
+                                </svg>
+                            </button>
+                            <div class="list__dropdown dropdown">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Моне</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Сислей</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Мане</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Ренуар</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="hero__item" tabindex="1">
-                            <select id="hero-choices3" class="hero__choices">
-                                <option selected disabled value="">Постпрессионизм</option>
-                                <option>Ван Гог</option>
-                                <option>Сезанн</option>
-                                <option>Гоген</option>
-                                <option>Сёра</option>
-                            </select>
+                        <li class="hero__item">
+                            <button class="list__btn btn-reset">Постимпрессионизм
+                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6L1 1" stroke="white" />
+                                </svg>
+                            </button>
+                            <div class="list__dropdown dropdown">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Ван Гог</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Сезанн</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Гоген</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Сёра</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="hero__item" tabindex="1">
-                            <select id="hero-choices4" class="hero__choices">
-                                <option selected disabled value="">Авангард</option>
-                                <option>Кандинский</option>
-                                <option>Маринетти</option>
-                                <option>Малевич</option>
-                                <option>Пикассо</option>
-                            </select>
+                        <li class="hero__item">
+                            <button class="list__btn btn-reset">Авангард
+                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6L1 1" stroke="white" />
+                                </svg>
+                            </button>
+                            <div class="list__dropdown dropdown">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Кандинский</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Маринетти</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Малевич</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Пикассо</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="hero__item" tabindex="1">
-                            <select id="hero-choices5" class="hero__choices">
-                                <option selected disabled value="">Футуризм</option>
-                                <option>Карра</option>
-                                <option>Прателла</option>
-                                <option>Северини</option>
-                                <option>Балла</option>
-                            </select>
+                        <li class="hero__item">
+                            <button class="list__btn btn-reset">Футуризм
+                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 1L6 6L1 1" stroke="white" />
+                                </svg>
+                            </button>
+                            <div class="list__dropdown dropdown">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Карра</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Прателла</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Северини</a></li>
+                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Балла</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                     <div class="hero__menu__search flex">
                         <button class="btn-reset header__search-btn">
-                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z" fill="white"/>
-                                </svg>
-                            </button>
-                            <input class="hero__menu__search-input" placeholder="Поиск по сайту" type="search">
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="6.8678" height="1.71695"
+                                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <input class="hero__menu__search-input" placeholder="Поиск по сайту" type="search">
                     </div>
                 </div>
                 <div class="hero__content">
@@ -121,12 +190,13 @@
                         <div class="swiper-bullet-pagination hero__pagination"></div>
                     </div>
                     <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
-                    <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений</p>
+                    <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий
+                        создаёт предпосылки для новых предложений</p>
                     <button class="hero__btn btn" aria-label="заказать расчет">Подписаться на рассылку</button>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <h2 class="about__title title">О нас</h2>
                 <p class="about__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
@@ -140,22 +210,29 @@
                     популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.</p>
             </div>
         </section>
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <div class="container gallery-container flex">
                 <div id="gallery-kazemir" class="gallery-kazemir">
                     <img src="img/gallery-hover++.jpg" alt="Каземир Малевич">
                     <div class="gallery-kazemir--text">
                         <button id="gallery-closeContent" class="btn-reset gallery-kazemir--btn">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
-                                </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                                    fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z"
+                                    fill="black" />
+                            </svg>
                         </button>
                         <p class="gallery-kazemir--author">Каземир Малевич</p>
                         <p class="gallery-kazemir--pic">"Женщина с граблями"</p>
                         <span class="gallery-kazemir--date">1931-1932</span>
-                        <p class="gallery-kazemir--descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
-                            принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской
+                        <p class="gallery-kazemir--descr">Картина из второй серии крестьянского цикла работ Казимира
+                            Малевича. Художник
+                            принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян
+                            после Берлинской
                             и Варшавской выставок в 1927 году.</p>
                     </div>
                 </div>
@@ -163,10 +240,10 @@
                     <h2 class="gallery__title title">Галерея</h2>
                     <label for="gallery">
                         Фильтр:
-                        <select class="choices" id="gallery">
-                            <option value="Живопись">Живопись</option>
-                            <option value="">Рисунок</option>
-                            <option value="">Скульптура</option>
+                        <select name="" id="choices" class="choices">
+                            <option value="">Живопись</option>
+                            <option>Рисунок</option>
+                            <option>Скульптура</option>
                         </select>
                     </label>
                     <div class="checkbox-container flex">
@@ -205,15 +282,16 @@
                             <img src="img/gallery-6.jpg" alt="Картина 6">
                         </div>
                     </div>
-                    <div id="gallery-prev" class="swiper-button-prev"></div>
-                    <p id="first-gallery-text" class="gallery__swiper-text">1 / 2</p>
-                    <p id="second-gallery-text" class="gallery__swiper-text">2 / 2</p>
-                    <div id="gallery-next" class="swiper-button-next"></div>
+                    <div class="gallery-buttons">
+                        <div id="gallery-prev" class="swiper-button-prev"></div>
+                        <div class="gallery-pagination"></div>
+                        <div id="gallery-next" class="swiper-button-next"></div>
+                    </div>
                 </div>
 
             </div>
         </section>
-        <section class="catalog">
+        <section id="catalog" class="catalog">
             <div class="container catalog-container">
                 <h2 class="catalog__title title">Каталог</h2>
                 <p class="catalog__descr">Акционеры крупнейших компаний, которые представляют собой яркий пример
@@ -221,7 +299,7 @@
                     нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное
                     производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть
                     функционально разнесены на независимые элементы.</p>
-                <div class="flex">
+                <div class="flex flex-catalog">
                     <div class="catalog-left">
                         <div data-target="one" class="catalog-left__card catalog-left__card--active">
                             <img src="img/catalog-left-default.jpg" class="catalog-left__img" alt="default author">
@@ -545,9 +623,11 @@
                 </div>
             </div>
         </section>
-        <section class="events">
+        <section id="events" class="events">
             <div class="container events-container">
                 <h2 class="event__title title">События</h2>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 <div class="swiper swiper-events">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slide-events">
@@ -555,7 +635,7 @@
                             <div class="swiper-events-wrapper flex">
                                 <p class="events__place">Музей им. Щусева</p>
                                 <p class="events__date">с 20 марта по 3 апреля</p>
-                                <h4 class="events__title">Книжная гравюра в живом восприятии</h4>
+                                <h4 class="events__title">Книжная гравюра <br> в&nbsp;живом восприятии</h4>
                                 <p class="events__descr">Один из ведущих флорентийских художников Кватроченто,
                                     основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо
                                 </p>
@@ -609,83 +689,86 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="events-pagination"></div>
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="container projects-container">
                 <h2 class="projects__title title">Проекты</h2>
                 <p class="projects__text">
-                    Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности
+                    Предварительные выводы: постоянное информационно&nbsp;&mdash;пропагандистское обеспечение нашей деятельности
                     однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые
                     государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости,
                     из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное
-                    информационно-пропагандистское <span class="tooltip-container"><span class="popup">i</span></span> обеспечение нашей деятельности однозначно фиксирует необходимость
+                    информационно&nbsp;&mdash;пропагандистское&nbsp;<span class="tooltip-container"><span class="popup">i</span></span>
+                    обеспечение нашей деятельности однозначно фиксирует необходимость
                     экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия представителей
-                    оппозиции могут быть рассмотрены <span class="tooltip-container"><span class="popup">i</span></span> исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых <span class="tooltip-container"><span class="popup">i</span></span>
+                    оппозиции могут быть рассмотрены&nbsp;<span class="tooltip-container"><span class="popup">i</span></span>
+                    исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых&nbsp;<span class="tooltip-container"><span
+                            class="popup">i</span></span>
                     предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных
                     социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть
                     смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости. Подробнее:
-                    <a href="blanchard-art.ru/projects" class="project__text--link" target="_blank">blanchard-art.ru/projects</a>
+                    <a href="blanchard-art.ru/projects" class="project__text--link"
+                        target="_blank">blanchard-art.ru/projects</a>
                 </p>
                 <h3 class="project__subtitle">Партнёры проектов:</h3>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 <div class="swiper swiper-project">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide project-slide">
                             <a href="#" class="swiper-slide-link">
                                 <img src="img/partners-1-hover.jpg" alt="Freelands Foundation">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide project-slide">
                             <a href="#" class="swiper-slide-link">
                                 <img src="img/partners-2-hover.jpg" alt="Institute for Contemporary Art">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide project-slide">
                             <a href="#" class="swiper-slide-link">
                                 <img src="img/partners-3-hover.jpg" alt="Workhouse Arts Center">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide project-slide">
                             <a href="#" class="swiper-slide-link">
                                 <img src="img/partners-4-hover.jpg" alt="1849 wine co">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide project-slide">
                             <a href="#" class="swiper-slide-link">
                                 <img src="img/partners-5-hover.jpg" alt="hiscox">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide project-slide">
                             <a href="#" class="swiper-slide-link">
                                 <img src="img/partners-6-hover.jpg" alt="camden arts center">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide project-slide">
                             <a href="#" class="swiper-slide-link">
                                 <img src="img/partners-7-hover.jpg" alt="Stassen">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide project-slide">
                             <a href="#" class="swiper-slide-link">
                                 <img src="img/partners-8-hover.jpg" alt="Watts gallery artists village">
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide project-slide">
                             <a href="#" class="swiper-slide-link">
                                 <img src="img/partners-9-hover.jpg" alt="eSad">
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
 
-        <section class="contacts">
+        <section id="contacts" class="contacts">
             <div class="container contacts-container">
                 <div class="flex flex-contacts">
                     <div>
@@ -695,9 +778,12 @@
                         </address>
                     </div>
                     <form action="/" class="contact__form flex form-flex">
-                        <input type="text" class="contact__input contact__name" placeholder="Имя*" data-validate-field="name" data-validate-rules="name">
-                        <input type="tel" class="contact__input contact__tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone">
+                        <input type="text" class="contact__input contact__name" placeholder="Имя*"
+                            data-validate-field="name" data-validate-rules="name">
+                        <input type="tel" class="contact__input contact__tel" placeholder="Телефон*"
+                            data-validate-field="tel" data-validate-rules="phone">
                         <button class="contact__btn btn-reset">Заказать обратный звонок</button>
+                        <button class="contact__btn contact__btn--mobile btn-reset">Заказать</button>
                     </form>
                     <address class="contact__social">
                         <p class="contact__social-title">Связаться в один клик</p>
