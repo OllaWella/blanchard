@@ -1,50 +1,157 @@
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll(".list__btn").forEach(item => {
+  item.addEventListener("click", function() {
+    let btn = this;
+    let dropdown = this.parentElement.querySelector(".dropdown");
+    
+    document.querySelectorAll(".dropdown").forEach(el => {
+      if (el != dropdown) {
+        el.classList.remove("active-dropdown");
+      }
+    })
+    dropdown.classList.toggle("active-dropdown");
+    btn.classList.toggle("active-btn")
+  })
+})
+
+document.addEventListener("click", function(e) {
+  let target = e.target;
+  if (!target.closest(".hero__list")) {
+    document.querySelectorAll(".dropdown").forEach(el => {
+        el.classList.remove("active-dropdown");
+    })
+    document.querySelectorAll(".list__btn").forEach(el => {
+      el.classList.remove("active-btn");
+  });
+  }
+})
+})
+
+const swiperGallery = new Swiper('.swiper-gallery', {
+  pagination: {
+    el: ".gallery-pagination",
+    type: "fraction",
+  },
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 100,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 100,
+    },
+    580: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 34,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 38,
+    },
+    1024: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 34,
+    },
+    1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+
+const swiperEvents = new Swiper('.swiper-events', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 200,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: ".events-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 34,
+      pagination: {
+        el: ".events-pagination",
+        clickable: true,
+      },
+    },
+    1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 27,
+      pagination: {
+        el: ".events-pagination",
+        clickable: true,
+      },
+    },
+    1300: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+
+let swiperProject = new Swiper('.swiper-project', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 50,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    580: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 33,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 34,
+    },
+    1025: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 25,
+    },
+    1300: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+  }
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const selector = document.querySelector(".choices")
 
   const choices = new Choices(selector, {
     searchEnabled: false,
-    shouldSort: false,
-    shouldSortItems: false,
-    itemSelectText: '',
+    itemSelectText: "",
     classNames: {
       containerOuter: 'choices header_choices',
     },
   });
-
 });
 
-const swiperGallery = new Swiper('.swiper-gallery', {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  loop: false,
-  spaceBetween: 50,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-const swiperEvents = new Swiper('.swiper-events', {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  loop: true,
-  spaceBetween: 50,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-const swiperProject = new Swiper('.swiper-project', {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  loop: true,
-  spaceBetween: 50,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
 
 document.addEventListener("DOMContentLoaded", function () {
   let acc = new Accordion('.accordion__list', {
@@ -77,9 +184,12 @@ ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map("map", {
     center: [55.758548, 37.601101],
-    zoom: 15
+    zoom: 15,
+    scroll: false,
   });
 
+  myMap.behaviors.disable('scrollZoom');
+  
   var placemark = new ymaps.Placemark([55.758548, 37.601101], {}, {
     iconLayout: 'default#image',
     iconImageHref: './img/placemark.svg',
@@ -117,7 +227,6 @@ new JustValidate('.contact__form', {
       required: "Недопустимый формат"
     }
   }
-
 });
 
 const container = document.querySelector(".hero-container")
@@ -127,12 +236,12 @@ const swiper = new Swiper('.hero__swiper', {
   speed: 300,
   loop: true,
   pagination: {
-    el: '.hero__pagination',
     type: 'bullets',
     clickable: true
   }
 })
 
+// появление карточки Каземира при клике
 let content = document.getElementById("gallery-kazemir")
 let show = document.getElementById("gallery-showContent")
 let hide = document.getElementById("gallery-closeContent")
@@ -145,102 +254,28 @@ hide.addEventListener("click", () => {
   content.style.display = "none"
 })
 
-const firstGalleryText = document.getElementById("first-gallery-text")
-const secondGalleryText = document.getElementById("second-gallery-text")
-const galleryPrevBtn = document.getElementById("gallery-prev")
-const galleryNextBtn = document.getElementById("gallery-next")
-
-galleryPrevBtn.addEventListener("click", () => {
-  firstGalleryText.style.display = "block",
-  secondGalleryText.style.display = "none"
+// бургер-меню
+let header = document.querySelector(".header")
+document.querySelector(".header__btn-open").addEventListener("click", function() {
+  document.querySelector(".header__nav").classList.add("active"),
+  header.style.height = "100vh",
+  document.querySelector(".header__btn-login").classList.add("show-btn")
+})
+document.querySelector(".nav__close").addEventListener("click", function() {
+  document.querySelector(".header__nav").classList.remove("active"),
+  header.style.height = "100px",
+  document.querySelector(".header__btn-login").classList.remove("show-btn")
 })
 
-galleryNextBtn.addEventListener("click", () => {
-  firstGalleryText.style.display = "none",
-  secondGalleryText.style.display = "block"
+// инпут в хедере при max-width: 1400рх
+let headerLogo = document.querySelector(".header__logo")
+document.querySelector(".header__input-tablet__btn").addEventListener("click", function() {
+  document.querySelector(".hero__menu__search-input").classList.add("show-btn-tablet"),
+  document.querySelector(".header__input__btn-close").classList.add("show-btn-tablet"),
+  headerLogo.style.transform = "translateX(73%)"
 })
-
-document.addEventListener("DOMContentLoaded", function () {
-  let selectorHero = document.getElementById("hero-choices1")
-
-  let choicesHero = new Choices(selectorHero, {
-    searchEnabled: false,
-    shouldSort: false,
-    shouldSortItems: false,
-    itemSelectText: '',
-    classNames: {
-      containerOuter: 'choices hero_choices',
-      containerInner: 'hero__choices-inner',
-      list: 'hero__choices-list',
-      item: 'hero__choices-item'
-    },
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  let selectorHero2 = document.getElementById("hero-choices2")
-
-  let choicesHero2 = new Choices(selectorHero2, {
-    searchEnabled: false,
-    shouldSort: false,
-    shouldSortItems: false,
-    itemSelectText: '',
-    classNames: {
-      containerOuter: 'choices hero_choices',
-      containerInner: 'hero__choices-inner',
-      list: 'hero__choices-list',
-      item: 'hero__choices-item'
-    },
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  let selectorHero3 = document.getElementById("hero-choices3")
-
-  let choicesHero3 = new Choices(selectorHero3, {
-    searchEnabled: false,
-    shouldSort: false,
-    shouldSortItems: false,
-    itemSelectText: '',
-    classNames: {
-      containerOuter: 'choices hero_choices',
-      containerInner: 'hero__choices-inner',
-      list: 'hero__choices-list',
-      item: 'hero__choices-item'
-    },
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  let selectorHero4 = document.getElementById("hero-choices4")
-
-  let choicesHero4 = new Choices(selectorHero4, {
-    searchEnabled: false,
-    shouldSort: false,
-    shouldSortItems: false,
-    itemSelectText: '',
-    classNames: {
-      containerOuter: 'choices hero_choices',
-      containerInner: 'hero__choices-inner',
-      list: 'hero__choices-list',
-      item: 'hero__choices-item'
-    },
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  let selectorHero5 = document.getElementById("hero-choices5")
-
-  let choicesHero5 = new Choices(selectorHero5, {
-    searchEnabled: false,
-    shouldSort: false,
-    shouldSortItems: false,
-    itemSelectText: '',
-    classNames: {
-      containerOuter: 'choices hero_choices',
-      containerInner: 'hero__choices-inner',
-      list: 'hero__choices-list',
-      item: 'hero__choices-item'
-    },
-  });
-});
+document.querySelector(".header__input__btn-close").addEventListener("click", function() {
+  document.querySelector(".hero__menu__search-input").classList.remove("show-btn-tablet"),
+  document.querySelector(".header__input__btn-close").classList.remove("show-btn-tablet")
+  headerLogo.style.transform = "translateX(0)"
+})
