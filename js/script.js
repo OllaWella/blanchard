@@ -255,16 +255,12 @@ hide.addEventListener("click", () => {
 })
 
 // бургер-меню
-let header = document.querySelector(".header")
 document.querySelector(".header__btn-open").addEventListener("click", function() {
-  document.querySelector(".header__nav").classList.add("active"),
-  header.style.height = "100vh",
-  document.querySelector(".header__btn-login").classList.add("show-btn")
+  document.querySelector(".header__nav").classList.add("active");
+  
 })
 document.querySelector(".nav__close").addEventListener("click", function() {
-  document.querySelector(".header__nav").classList.remove("active"),
-  header.style.height = "100px",
-  document.querySelector(".header__btn-login").classList.remove("show-btn")
+  document.querySelector(".header__nav").classList.remove("active");
 })
 
 // инпут в хедере при max-width: 1400рх
