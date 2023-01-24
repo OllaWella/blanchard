@@ -116,6 +116,11 @@ let swiperProject = new Swiper('.swiper-project', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
+    450: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+    },
     580: {
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -255,23 +260,24 @@ hide.addEventListener("click", () => {
 })
 
 // бургер-меню
+const loginBtn = document.querySelector(".btn-login-burger")
 document.querySelector(".header__btn-open").addEventListener("click", function() {
-  document.querySelector(".header__nav").classList.add("active");
+  document.querySelector(".header__nav").classList.add("active")
+  loginBtn.classList.add("show-btn")
   
 })
 document.querySelector(".nav__close").addEventListener("click", function() {
-  document.querySelector(".header__nav").classList.remove("active");
+  document.querySelector(".header__nav").classList.remove("active")
+  loginBtn.classList.remove("show-btn")
 })
 
 // инпут в хедере при max-width: 1400рх
 let headerLogo = document.querySelector(".header__logo")
 document.querySelector(".header__input-tablet__btn").addEventListener("click", function() {
   document.querySelector(".hero__menu__search-input").classList.add("show-btn-tablet"),
-  document.querySelector(".header__input__btn-close").classList.add("show-btn-tablet"),
-  headerLogo.style.transform = "translateX(73%)"
+  document.querySelector(".header__input__btn-close").classList.add("show-btn-tablet")
 })
 document.querySelector(".header__input__btn-close").addEventListener("click", function() {
   document.querySelector(".hero__menu__search-input").classList.remove("show-btn-tablet"),
   document.querySelector(".header__input__btn-close").classList.remove("show-btn-tablet")
-  headerLogo.style.transform = "translateX(0)"
 })
