@@ -73,6 +73,13 @@
                         <a href="#contacts" class="header__nav__item--link">Контакты</a>
                     </li>
                 </ul>
+                <button class="btn-reset btn-login-burger">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                            fill="white" />
+                    </svg>
+                    Войти</button>
             </nav>
             <button class="btn-reset header__btn-login">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,97 +94,99 @@
     <main>
         <section class="hero">
             <div class="hero-container">
-                <div class="hero__menu flex">
-                    <ul class="hero__list flex">
-                        <li class="hero__item">
-                            <button class="list__btn btn-reset">Реализм
-                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1L6 6L1 1" stroke="white" />
+                <div class="hero__menu">
+                    <div class="hero__menu__offset">
+                        <ul class="hero__list flex">
+                            <li class="hero__item">
+                                <button class="list__btn btn-reset">Реализм
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1L6 6L1 1" stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="list__dropdown dropdown">
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Реализм</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Тинторетто</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Леонардо</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Верроккьо</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hero__item">
+                                <button class="list__btn btn-reset">Импрессионизм
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1L6 6L1 1" stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="list__dropdown dropdown">
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Моне</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Сислей</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Мане</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Ренуар</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hero__item">
+                                <button class="list__btn btn-reset">Постимпрессионизм
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1L6 6L1 1" stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="list__dropdown dropdown">
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Ван Гог</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Сезанн</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Гоген</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Сёра</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hero__item">
+                                <button class="list__btn btn-reset">Авангард
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1L6 6L1 1" stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="list__dropdown dropdown">
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Кандинский</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Маринетти</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Малевич</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Пикассо</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hero__item">
+                                <button class="list__btn btn-reset">Футуризм
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1L6 6L1 1" stroke="white" />
+                                    </svg>
+                                </button>
+                                <div class="list__dropdown dropdown">
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Карра</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Прателла</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Северини</a></li>
+                                        <li class="dropdown__item"><a class="dropdown__link" href="#">Балла</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="hero__menu__search flex">
+                            <button class="btn-reset header__search-btn">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="6.8678" height="1.71695"
+                                        transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z"
+                                        fill="white" />
                                 </svg>
                             </button>
-                            <div class="list__dropdown dropdown">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Реализм</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Тинторетто</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Леонардо</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Верроккьо</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="hero__item">
-                            <button class="list__btn btn-reset">Импрессионизм
-                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1L6 6L1 1" stroke="white" />
-                                </svg>
-                            </button>
-                            <div class="list__dropdown dropdown">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Моне</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Сислей</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Мане</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Ренуар</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="hero__item">
-                            <button class="list__btn btn-reset">Постимпрессионизм
-                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1L6 6L1 1" stroke="white" />
-                                </svg>
-                            </button>
-                            <div class="list__dropdown dropdown">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Ван Гог</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Сезанн</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Гоген</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Сёра</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="hero__item">
-                            <button class="list__btn btn-reset">Авангард
-                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1L6 6L1 1" stroke="white" />
-                                </svg>
-                            </button>
-                            <div class="list__dropdown dropdown">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Кандинский</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Маринетти</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Малевич</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Пикассо</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="hero__item">
-                            <button class="list__btn btn-reset">Футуризм
-                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1L6 6L1 1" stroke="white" />
-                                </svg>
-                            </button>
-                            <div class="list__dropdown dropdown">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Карра</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Прателла</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Северини</a></li>
-                                    <li class="dropdown__item"><a class="dropdown__link" href="#">Балла</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="hero__menu__search flex">
-                        <button class="btn-reset header__search-btn">
-                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="6.8678" height="1.71695"
-                                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
-                                    fill="white" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z"
-                                    fill="white" />
-                            </svg>
-                        </button>
-                        <input class="hero__menu__search-input" placeholder="Поиск по сайту" type="search">
+                            <input class="hero__menu__search-input" placeholder="Поиск по сайту" type="search">
+                        </div>
                     </div>
                 </div>
                 <div class="hero__content">
@@ -189,10 +198,12 @@
                         </div>
                         <div class="swiper-bullet-pagination hero__pagination"></div>
                     </div>
-                    <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
-                    <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий
-                        создаёт предпосылки для новых предложений</p>
-                    <button class="hero__btn btn" aria-label="заказать расчет">Подписаться на рассылку</button>
+                    <div class="hero__content-offset flex">
+                        <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+                        <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий
+                            создаёт предпосылки для новых предложений</p>
+                        <button class="hero__btn btn" aria-label="заказать расчет">Подписаться на рассылку</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -819,7 +830,7 @@
                     </address>
                 </div>
             </div>
-            <div id="map" style="max-width: 1920px; height: 700px"></div>
+            <div id="map"></div>
         </section>
     </main>
 
