@@ -602,6 +602,7 @@ a {
 
 .choices[data-type*=select-one] .choices__inner {
     padding: 0;
+    transition: background-color .3s ease-in-out;
 }
 
 .header_choices.is-focused:focus-visible {
@@ -619,6 +620,7 @@ a {
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
+    transition: background-color .3s ease-in-out;
 }
 
 .choices__list--dropdown {
