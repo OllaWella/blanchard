@@ -19,25 +19,25 @@
 <body>
     <header class="header">
         <div class="container header__container flex">
-            <button class="btn-reset header__btn-open">
+            <button aria-label="Выпадающее меню" class="btn-reset header__btn-open">
                 <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
                     <path d="M28.2002 12.8739H0.000194192V16.5261H28.2002V12.8739Z" fill="white" />
                     <path d="M24 25.0479H-9.53674e-07V28.7H24V25.0479Z" fill="white" />
                 </svg>
             </button>
-            <a href="#" class="header__logo">
+            <a aria-label="Логотип Бланчард" href="#" class="header__logo">
                 <img src="img/logo.svg" alt="Logo Blacnchard">
             </a>
             <div class="flex header__input-tablet">
-                <button class="btn-reset header__input-tablet__btn">
+                <button aria-label="Поиск на странице" class="btn-reset header__input-tablet__btn">
                     <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
                         </svg>
                 </button>
                 <input type="search" class="hero__menu__search-input">
-                <button class="btn-reset header__input__btn-close">
+                <button aria-label="закрыть поиск" class="btn-reset header__input__btn-close">
                     <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white"/>
                         <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)" fill="white"/>
@@ -45,7 +45,7 @@
                 </button>
             </div>
             <nav class="header__nav">
-                <button class="btn-reset nav__close">
+                <button aria-label="закрыть выпадающее меню" class="btn-reset nav__close">
                     <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="2.63672" width="37.2838" height="3.72838" transform="rotate(45 2.63672 0)"
                             fill="white" />
@@ -174,7 +174,7 @@
                             </li>
                         </ul>
                         <div class="hero__menu__search flex">
-                            <button class="btn-reset header__search-btn">
+                            <button aria-label="Поиск на странице" class="btn-reset header__search-btn">
                                 <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="6.8678" height="1.71695"
@@ -226,7 +226,7 @@
                 <div id="gallery-kazemir" class="gallery-kazemir">
                     <img src="img/gallery-hover++.jpg" alt="Каземир Малевич">
                     <div class="gallery-kazemir--text">
-                        <button id="gallery-closeContent" class="btn-reset gallery-kazemir--btn">
+                        <button aria-label="закрытие модального окна" id="gallery-closeContent" class="btn-reset gallery-kazemir--btn">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -237,8 +237,8 @@
                                     fill="black" />
                             </svg>
                         </button>
-                        <p class="gallery-kazemir--author">Каземир Малевич</p>
-                        <p class="gallery-kazemir--pic">"Женщина с граблями"</p>
+                        <span class="gallery-kazemir--author">Каземир Малевич</span>
+                        <span class="gallery-kazemir--spanic">"Женщина с граблями"</p>
                         <span class="gallery-kazemir--date">1931-1932</span>
                         <p class="gallery-kazemir--descr">Картина из второй серии крестьянского цикла работ Казимира
                             Малевича. Художник
@@ -392,7 +392,7 @@
                             <li class="accordion__item ac">
                                 <div class="accordion__top">
                                     <h3>C 1400 по 1499 гг</h3>
-                                    <button class="accordion__btn">+</button>
+                                    <button aria-label="открытие аккордеона" class="accordion__btn">+</button>
                                 </div>
                                 <div class="accordion__bottom ac-panel">
                                     <ul class="accrodion__bottom-list flex">
@@ -512,7 +512,7 @@
                             <li class="accordion__item ac">
                                 <div class="accordion__top">
                                     <h3>C 1500 по 1599 гг</h3>
-                                    <button class="accordion__btn">+</button>
+                                    <button aria-label="открытие аккордеона" class="accordion__btn">+</button>
                                 </div>
                                 <div class="accordion__bottom ac-panel">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -532,7 +532,7 @@
                             <li class="accordion__item ac">
                                 <div class="accordion__top">
                                     <h3>C 1600 по 1699 гг</h3>
-                                    <button class="accordion__btn">+</button>
+                                    <button aria-label="открытие аккордеона" class="accordion__btn">+</button>
                                 </div>
                                 <div class="accordion__bottom ac-panel">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -552,7 +552,7 @@
                             <li class="accordion__item ac">
                                 <div class="accordion__top">
                                     <h3>C 1700 по 1799 гг</h3>
-                                    <button class="accordion__btn">+</button>
+                                    <button aria-label="открытие аккордеона" class="accordion__btn">+</button>
                                 </div>
                                 <div class="accordion__bottom ac-panel">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -572,7 +572,7 @@
                             <li class="accordion__item ac">
                                 <div class="accordion__top">
                                     <h3>C 1800 по 1899 гг</h3>
-                                    <button class="accordion__btn">+</button>
+                                    <button aria-label="открытие аккордеона" class="accordion__btn">+</button>
                                 </div>
                                 <div class="accordion__bottom ac-panel">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -592,7 +592,7 @@
                             <li class="accordion__item ac">
                                 <div class="accordion__top">
                                     <h3>C 1900 по 1999 гг</h3>
-                                    <button class="accordion__btn">+</button>
+                                    <button aria-label="открытие аккордеона" class="accordion__btn">+</button>
                                 </div>
                                 <div class="accordion__bottom ac-panel">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -612,7 +612,7 @@
                             <li class="accordion__item ac">
                                 <div class="accordion__top">
                                     <h3>C 2000 г</h3>
-                                    <button class="accordion__btn">+</button>
+                                    <button aria-label="открытие аккордеона" class="accordion__btn">+</button>
                                 </div>
                                 <div class="accordion__bottom ac-panel">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -644,9 +644,9 @@
                         <div class="swiper-slide swiper-slide-events">
                             <img src="img/events-1.jpg" alt="">
                             <div class="swiper-events-wrapper flex">
-                                <p class="events__place">Музей им. Щусева</p>
-                                <p class="events__date">с 20 марта по 3 апреля</p>
-                                <h4 class="events__title">Книжная гравюра <br> в&nbsp;живом восприятии</h4>
+                                <span class="events__place">Музей им. Щусева</span>
+                                <span class="events__date">с 20 марта по 3 апреля</span>
+                                <h3 class="events__title">Книжная гравюра <br> в&nbsp;живом восприятии</h3>
                                 <p class="events__descr">Один из ведущих флорентийских художников Кватроченто,
                                     основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо
                                 </p>
@@ -656,9 +656,9 @@
                         <div class="swiper-slide swiper-slide-events">
                             <img src="img/events-2.jpg" alt="">
                             <div class="swiper-events-wrapper flex">
-                                <p class="events__place">ММОМА</p>
-                                <p class="events__date">24 марта 19:00</p>
-                                <h4 class="events__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h4>
+                                <span class="events__place">ММОМА</span>
+                                <span class="events__date">24 марта 19:00</span>
+                                <h3 class="events__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
                                 <p class="events__descr">Высокий уровень вовлечения представителей целевой аудитории
                                     является чётким доказательством простого факта</p>
                                 <button href="" class="btn-reset events__more">Подробнее</button>
@@ -667,9 +667,9 @@
                         <div class="swiper-slide swiper-slide-events">
                             <img src="img/events-3.jpg" alt="">
                             <div class="swiper-events-wrapper flex">
-                                <p class="events__place">Еврейский музей</p>
-                                <p class="events__date">с 31 марта по 21 апреля</p>
-                                <h4 class="events__title">Выставка «Формация 2020»</h4>
+                                <span class="events__place">Еврейский музей</span>
+                                <span class="events__date">с 31 марта по 21 апреля</span>
+                                <h3 class="events__title">Выставка «Формация 2020»</h3>
                                 <p class="events__descr">Идейные соображения высшего порядка, а также современная
                                     методология разработки играет важную роль в формировании глубокомысленных
                                     рассуждений</p>
@@ -679,9 +679,9 @@
                         <div class="swiper-slide swiper-slide-events">
                             <img src="img/events-4.jpg" alt="">
                             <div class="swiper-events-wrapper flex">
-                                <p class="events__place">ММАМ</p>
-                                <p class="events__date">с 8 апреля по 20 мая</p>
-                                <h4 class="events__title">Джон Винзор. Фотографии из серии «Метафора»</h4>
+                                <span class="events__place">ММАМ</span>
+                                <span class="events__date">с 8 апреля по 20 мая</span>
+                                <h3 class="events__title">Джон Винзор. Фотографии из серии «Метафора»</h3>
                                 <p class="events__descr">Один из ведущих флорентийских художников Кватроченто,
                                     основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо
                                 </p>
@@ -691,9 +691,9 @@
                         <div class="swiper-slide swiper-slide-events">
                             <img src="img/events-5.jpg" alt="">
                             <div class="swiper-events-wrapper flex">
-                                <p class="events__place">Третьяковка на Крымском валу</p>
-                                <p class="events__date">с 30 марта по 30 апреля</p>
-                                <h4 class="events__title">XXIV Международная биеннале молодого искусства</h4>
+                                <span class="events__place">Третьяковка на Крымском валу</span>
+                                <span class="events__date">с 30 марта по 30 апреля</span>
+                                <h3 class="events__title">XXIV Международная биеннале молодого искусства</h3>
                                 <p class="events__descr">Внезапно, реплицированные с зарубежных источников, современные
                                     исследования</p>
                                 <button href="" class="btn-reset events__more">Подробнее</button>
@@ -712,12 +712,12 @@
                     однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые
                     государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости,
                     из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное
-                    информационно&nbsp;&mdash;пропагандистское&nbsp;<span class="tooltip-container"><span class="popup">i</span></span>
+                    информационно&nbsp;&mdash;пропагандистское&nbsp;<span class="tooltip-container"><span aria-label="всплывающая подсказка" class="popup">i</span></span>
                     обеспечение нашей деятельности однозначно фиксирует необходимость
                     экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия представителей
-                    оппозиции могут быть рассмотрены&nbsp;<span class="tooltip-container"><span class="popup">i</span></span>
+                    оппозиции могут быть рассмотрены&nbsp;<span class="tooltip-container"><span aria-label="всплывающая подсказка" class="popup">i</span></span>
                     исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых&nbsp;<span class="tooltip-container"><span
-                            class="popup">i</span></span>
+                            aria-label="всплывающая подсказка" class="popup">i</span></span>
                     предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных
                     социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть
                     смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости. Подробнее:
@@ -798,7 +798,7 @@
                     </form>
                     <address class="contact__social">
                         <p class="contact__social-title">Связаться в один клик</p>
-                        <a href="" class="contact__social__link">
+                        <a aria-label="переход в вотсап blanchard" href="" class="contact__social__link">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_191243_648)">
@@ -816,7 +816,7 @@
                                 </defs>
                             </svg>
                         </a>
-                        <a href="" class="contact__social__link">
+                        <a aria-label="переход в телеграм blanchard" href="" class="contact__social__link">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -842,7 +842,7 @@
             <div class="footer__social">
                 <ul class="flex footer__social__list">
                     <li class="footer__social__item footer__social__item">
-                        <a target="_blank" href="blanchard-art.ru/projects" class="footer__social__item-link">
+                        <a aria-label="открытие страницы вконтакте Blanchard" target="_blank" href="blanchard-art.ru/projects" class="footer__social__item-link">
                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -852,7 +852,7 @@
                         </a>
                     </li>
                     <li class="footer__social__item">
-                        <a target="_blank" href="blanchard-art.ru/projects" class="footer__social__item-link">
+                        <a aria-label="открытие страницы одноклассники Blanchard" target="_blank" href="blanchard-art.ru/projects" class="footer__social__item-link">
                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
